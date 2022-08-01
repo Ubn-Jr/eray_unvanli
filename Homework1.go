@@ -9,7 +9,7 @@ func main() {
 	finalExam := 30
 	var midtermAndFinalCount int
 	isMakeUpExam := false
-	midtermAndFinalCount = Control(midtermExam, finalExam, isMakeUpExam)
+	midtermAndFinalCount = control(midtermExam, finalExam, isMakeUpExam)
 	fmt.Println(midtermAndFinalCount)
 
 }
@@ -17,7 +17,7 @@ func main() {
 //TODO
 //golang dilinde eğer isimler büyük harf ile başlarsa 
 //bu paketin dışında bu değerin kullanılacağı anlamıda gelir henüz bu konuyu işlemedik not olarak yazıyorum
-func Control(midtermExam int, finalExam int, isMakeUpExam bool) int {
+func control(midtermExam int, finalExam int, isMakeUpExam bool) int {
 
 	if isMakeUpExam {
 		makeUpExamCount := getMakeUpExam()
