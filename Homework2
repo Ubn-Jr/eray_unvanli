@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+	var kilolar [9]int = [9]int{30, 35, 59, 12, 107, 25, 100, 63, 74}
+	asansöreBinenKisilerinKilosu(kilolar)
+}
+
+func asansöreBinenKisilerinKilosu(kilolar [9]int) {
+	var maksKapasite int = 500
+	var toplamAgirlik int = 0
+	for x := 0; x < 9; x++ {
+
+		var sonrakiAgirlik int = kilolar[x]
+		if maksKapasite == toplamAgirlik {
+			break
+		}
+		if (maksKapasite - toplamAgirlik) >= sonrakiAgirlik {
+			toplamAgirlik += sonrakiAgirlik
+			fmt.Println(toplamAgirlik)
+		}
+
+	}
+}
