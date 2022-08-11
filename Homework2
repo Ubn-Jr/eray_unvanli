@@ -10,9 +10,15 @@ func main() {
 func asansöreBinenKisilerinKilosu(kilolar [9]int) {
 	var maksKapasite int = 500
 	var toplamAgirlik int = 0
+	//TODO
+	// 9 yerine gerekli arrayın len() ile uzunluğunu kullanalım
 	for x := 0; x < 9; x++ {
 
 		var sonrakiAgirlik int = kilolar[x]
+		
+		//TODO
+		// if else if else yapısıyla kullanım daha uygun olur burada
+		/
 		if maksKapasite == toplamAgirlik {
 			break
 		}
